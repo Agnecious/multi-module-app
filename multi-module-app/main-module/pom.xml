@@ -6,7 +6,7 @@
 		<groupId>com.example</groupId>
 		<artifactId>multi-module-app</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>multi-module-app/multi-module-app/pom.xml</relativePath>
+		<relativePath>multi-module-app/pom.xml</relativePath>
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>main-module</artifactId>
