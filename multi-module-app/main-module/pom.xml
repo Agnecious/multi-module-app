@@ -49,7 +49,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>java.com.example.demo.DemoApplication</mainClass>
+            <mainClass>com.example.demo.DemoApplication</mainClass>
           </manifest>
         </archive>
       </configuration>
