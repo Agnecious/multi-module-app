@@ -38,13 +38,13 @@
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>${maven.jar.plugin.version}</version>
 					      <configuration>
-<!--         <archive>
+         <archive>
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
             <mainClass>com.example.demo.DemoApplication</mainClass>
           </manifest>
-        </archive> -->
+        </archive> 
       </configuration>
 				</plugin>
 				<plugin>
