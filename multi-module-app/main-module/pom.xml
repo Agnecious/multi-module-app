@@ -42,8 +42,9 @@
           <manifest>
 <!--             <addClasspath>true</addClasspath> -->
 <!--             <classpathPrefix>lib/</classpathPrefix> --> 
-            <mainClass>com.example.demo.DemoApplication</mainClass> 
-          </manifest>
+		  <packageName>com.example.demo</packageName>
+<!--             <mainClass>com.example.demo.DemoApplication</mainClass> -->
+          </manifest> 
         </archive> 
       </configuration>
 				</plugin>
