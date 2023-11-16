@@ -23,7 +23,6 @@
 		<java.version>17</java.version>
 		<revision>23.9</revision>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<spring.boot.maven.plugin.version>2.7.5</spring.boot.maven.plugin.version>
 		<maven.jar.plugin.version>3.2.2</maven.jar.plugin.version>
 		<maven.surefire.plugin.version>3.0.0-M7</maven.surefire.plugin.version>
 		<mssql-jdbc.version>11.2.0.jre8</mssql-jdbc.version>
@@ -60,15 +59,18 @@
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
-					<version>${spring.boot.maven.plugin.version}</version>
-					<configuration>
-						<skip>true</skip>
-					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>${maven.jar.plugin.version}</version>
+					<configuration>
+						<archive>
+							<manifest>
+								<addClasspath>true</addClasspath>
+								<mainClass>com.example.demo.DemoApplication</mainClass>
+							</manifest>
+						</archive>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>com.spotify</groupId>
@@ -83,10 +85,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.plugin.version}</version>
 			</plugin>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+
 		</plugins>
 	</build>
 
