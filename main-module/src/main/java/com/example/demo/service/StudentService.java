@@ -3,11 +3,11 @@ package com.example.demo.service;
 import com.example.demo.dto.Student;
 import com.example.demo.model.StudentTbl;
 import com.example.demo.repository.StudentRepository;
-import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 
 @Component
